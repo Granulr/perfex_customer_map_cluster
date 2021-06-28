@@ -1,4 +1,5 @@
 # Customer Cluster Map For Perfex CRM
+<img src="https://granulr.uk/wp-content/uploads/2021/06/perfex-customer-map-cluster.png" alt="Perfex Customer Map Cluster">
 Customer Map Cluster View Module For Perfex CRM for version >= 2.7.0
 <p>This module allows you to easily see all of your clients on a map, clustered together for multiple clients in a single area.</p>
 
@@ -19,6 +20,6 @@ Customer Map Cluster View Module For Perfex CRM for version >= 2.7.0
 * Cleanup Code (move css/js into seperate files)
 
 ### Notes
-<p>This is an innitial version we were playing around creating a while back. We had some interest in the current version from the Perfex CRM Facebook Group, so made the module opensource. Feel free to play around with the code, and if you make any modificaitons that you feel may be worth updating here, we will monitor merge requests going forward here at <a href="https://www.granulr.uk" targer="_blank" title="Granulr">Granulr</a></p>
+<p>This is an innitial version we were playing around creating a while back. We had some interest in the current version from the Perfex CRM Facebook Group, so made the module opensource. Feel free to play around with the code, and if you make any modificaitons that you feel may be worth updating here, we will monitor merge requests going forward here at <a href="https://www.granulr.uk" targer="_blank" title="Granulr">Granulr</a>.</p>
 
 
