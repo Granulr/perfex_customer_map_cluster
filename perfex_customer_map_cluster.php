@@ -11,7 +11,7 @@ Author URI: https://granulr.uk
 Requires at least: 2.7.*
 */
 
-define('CUSTOMER_MAP_CLUSTER', 'customer_map_cluster');
+define('PERFEX_CUSTOMER_MAP_CLUSTER', 'customer_map_cluster');
 
 // Setup our hooks
 hooks()->add_action('admin_init', 'customer_map_cluster_module_init_menu_items');
@@ -20,7 +20,7 @@ hooks()->add_action('admin_init', 'customer_map_cluster_module_init_menu_items')
 /**
 * Register activation module hook
 */
-register_activation_hook(CUSTOMER_MAP_CLUSTER, 'customer_map_cluster_module_activation_hook');
+register_activation_hook(PERFEX_CUSTOMER_MAP_CLUSTER, 'customer_map_cluster_module_activation_hook');
 
 function customer_map_cluster_module_activation_hook()
 {
@@ -31,7 +31,7 @@ function customer_map_cluster_module_activation_hook()
 /**
 * Register language files, must be registered if the module is using languages
 */
-register_language_files(CUSTOMER_MAP_CLUSTER, [CUSTOMER_MAP_CLUSTER]);
+register_language_files(PERFEX_CUSTOMER_MAP_CLUSTER, [PERFEX_CUSTOMER_MAP_CLUSTER]);
 
 
 /**
