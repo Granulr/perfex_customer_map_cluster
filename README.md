@@ -8,3 +8,8 @@ Customer Map Cluster View Module For Perfex CRM for version >= 2.7.0
 
 ### Installation Instructions - GitHub
 * Clone Repositry into /modules/ folder
+
+
+### Prerequisits
+* You must have clients Latitude and Longitude set for each client
+* You must have a Google Maps API Key Set within Settings > Google > Google API Key
