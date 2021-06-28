@@ -2,7 +2,7 @@
 
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Customer_map_cluster_model extends App_Model
+class Perfex_customer_map_cluster_model extends App_Model
 {
 	public function __construct()
     {

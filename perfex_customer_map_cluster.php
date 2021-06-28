@@ -3,7 +3,7 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
-Module Name: Customer Map Cluster
+Module Name: Perfex Customer Map Cluster
 Description: See how all your customers locations fall under a single map feature.
 Version: 1.0.0
 Author: Granulr Ltd
@@ -11,18 +11,18 @@ Author URI: https://granulr.uk
 Requires at least: 2.7.*
 */
 
-define('PERFEX_CUSTOMER_MAP_CLUSTER', 'customer_map_cluster');
+define('PERFEX_CUSTOMER_MAP_CLUSTER', 'perfex_customer_map_cluster');
 
 // Setup our hooks
-hooks()->add_action('admin_init', 'customer_map_cluster_module_init_menu_items');
+hooks()->add_action('admin_init', 'perfex_customer_map_cluster_module_init_menu_items');
 
 
 /**
 * Register activation module hook
 */
-register_activation_hook(PERFEX_CUSTOMER_MAP_CLUSTER, 'customer_map_cluster_module_activation_hook');
+register_activation_hook(PERFEX_CUSTOMER_MAP_CLUSTER, 'perfex_customer_map_cluster_module_activation_hook');
 
-function customer_map_cluster_module_activation_hook()
+function perfex_customer_map_cluster_module_activation_hook()
 {
     $CI = &get_instance();
     require_once(__DIR__ . '/install.php');
@@ -38,14 +38,14 @@ register_language_files(PERFEX_CUSTOMER_MAP_CLUSTER, [PERFEX_CUSTOMER_MAP_CLUSTE
  * Init vault module menu items in setup in admin_init hook
  * @return null
  */
-function customer_map_cluster_module_init_menu_items()
+function perfex_customer_map_cluster_module_init_menu_items()
 {
     $CI = &get_instance();
 
     $CI->app_menu->add_sidebar_children_item('utilities', [
-        'slug'      => 'customer_map_cluster',
+        'slug'      => 'perfex_customer_map_cluster',
         'name'      => _l('map_cluster'), // The name if the item
-        'href'      => admin_url('customer_map_cluster'),
+        'href'      => admin_url('perfex_customer_map_cluster'),
         'position'  => 16, // The menu position
     ]);
 
