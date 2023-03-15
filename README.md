@@ -16,7 +16,7 @@ Customer Map Cluster View Module For Perfex CRM for version >= 2.7.0
 * You must have clients Latitude and Longitude set for each client (under Customers > Maps > Lat & Long)
 * You must have a Google Maps API Key Set within Settings > Google > Google API Key
 
-## Languages
+### Languages
 * English
 
 ### Usage
