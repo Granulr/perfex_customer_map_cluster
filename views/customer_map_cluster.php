@@ -42,7 +42,7 @@
 <script>
   function initMap() {
     var map = new google.maps.Map(document.getElementById('clustermap'), {
-      zoom: 2,
+      zoom: 3,
       center: {lat: 53.729826, lng: -0.560759}
     });
 
