@@ -5,7 +5,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 /*
 Module Name: Perfex Customer Map Cluster
 Description: See how all your customers locations fall under a single map feature.
-Version: 1.0.0
+Version: 1.0.1
 Author: Granulr Ltd
 Author URI: https://granulr.uk
 Requires at least: 2.7.*
