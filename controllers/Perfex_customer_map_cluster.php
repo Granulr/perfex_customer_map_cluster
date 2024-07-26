@@ -8,6 +8,9 @@ class Perfex_customer_map_cluster extends AdminController
     {
         parent::__construct();
         $this->load->model('perfex_customer_map_cluster_model');
+
+        // Load our custom assets
+        $this->app_css->add('perfex-customer-map-cluster-css', module_dir_url('perfex_customer_map_cluster', 'assets/css/perfex_customer_map_cluster.css'), 'admin', ['app-css']);
     }
 
     public function index()
