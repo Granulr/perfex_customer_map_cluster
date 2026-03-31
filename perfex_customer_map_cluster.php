@@ -24,7 +24,6 @@ register_activation_hook(PERFEX_CUSTOMER_MAP_CLUSTER, 'perfex_customer_map_clust
 
 function perfex_customer_map_cluster_module_activation_hook()
 {
-    $CI = &get_instance();
     require_once(__DIR__ . '/install.php');
 }
 
@@ -40,6 +39,10 @@ register_language_files(PERFEX_CUSTOMER_MAP_CLUSTER, [PERFEX_CUSTOMER_MAP_CLUSTE
  */
 function perfex_customer_map_cluster_module_init_menu_items()
 {
+    if (!has_permission('customers', '', 'view')) {
+        return;
+    }
+
     $CI = &get_instance();
 
     $CI->app_menu->add_sidebar_children_item('utilities', [
